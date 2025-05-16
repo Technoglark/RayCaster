@@ -7,3 +7,9 @@
 2. Using of linear algebra theorems
    
    -Solving equations systems using Kramer's rule for finding intersections of rays with polygons
+   -Using analytical geometry methods for ray rotatings and representation of rays
+
+## Application using
+1.Polygons creating
+
+
