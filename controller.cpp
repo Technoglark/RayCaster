@@ -38,10 +38,6 @@ std::vector<Ray> Controller::CastRays(){
         for(auto& vertex : polygon.GetVertices()){
             double alpha = std::atan2((vertex.y() - light_source.y()), (vertex.x() - light_source.x()));
             Ray ray(light_source, vertex, alpha);
-            /*for(double i = 0.01; i <= 0.1; i += 0.077){
-                rays.push_back(ray.Rotate(i));
-                rays.push_back(ray.Rotate(-i));
-            }*/
             rays.push_back(ray);
             rays.push_back(ray.Rotate(0.01));
             rays.push_back(ray.Rotate(-0.01));
