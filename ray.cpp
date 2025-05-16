@@ -15,7 +15,6 @@ double Ray::GetAngle() const {
 
 Ray Ray::Rotate(double phi) const {
     double len = std::hypot(end.x() - begin.x(), end.y() - begin.y());
-    //double current_angle = std::atan2(end.x() - begin.x(), end.y() - begin.y());
     QPointF new_end(
         begin.x() + len * 1000 * std::cos(angle + phi),
         begin.y() + len * 1000 * std::sin(angle + phi)
